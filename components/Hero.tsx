@@ -17,9 +17,13 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <div className=' relative mt-20 md:mb-0 flex-shrink-0 w-56 h-56  md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]'>
-                    <Image src={require('../assets/son-rounded.png')} className=' rounded-full h-32 w-32 mx-auto object-cover' layout='fill' objectFit='cover' alt={''} />
-      </div>
+      {/* <div className='relative mt-20 md:mb-0 flex-shrink-0 w-56 h-56 md:w-64 md:h-96 xl:w-[400px] xl:h-[500px]'>
+        <Image src={require('../assets/son-rounded.png')} className=' rounded-full h-32 w-32 mx-auto object-cover' layout='fill' objectFit='cover' alt={''} />
+      </div> */}
+      <img
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        src="https://www.si.com/.image/t_share/MTk4NTkzMTQ4Mzc5NzM1NDkx/novak-djokovic-1.jpg"
+        alt="" />
       <div className='z-20'>
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
