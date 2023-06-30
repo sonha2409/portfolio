@@ -8,6 +8,7 @@ import WorkExperience from '@/components/WorkExperience'
 import Skills from '@/components/Skills'
 import Project from '@/components/Project'
 import ContactMe from '@/components/ContactMe'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -52,6 +53,16 @@ const Home: NextPage = () => {
         <ContactMe />
 
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <img
+              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
+              src="https://res.cloudinary.com/teepublic/image/private/s--ZgvZ9pyS--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1672737178/production/designs/37993677_0.jpg" alt="" />
+          </div>
+        </footer>
+      </Link>
     </div>
 
     
